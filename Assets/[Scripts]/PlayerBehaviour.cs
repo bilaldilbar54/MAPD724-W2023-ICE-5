@@ -48,12 +48,16 @@ public class PlayerBehaviour : MonoBehaviour
     if (other.gameObject.CompareTag("Cloud"))
     {
         // Play the thunder sound
+        other.gameObject.GetComponent<AudioSource>().Play();
+
         // Take Damage / Lose Health
     }
 
     if (other.gameObject.CompareTag("Island"))
     {
         // Play the yay sound
+        other.gameObject.GetComponent<AudioSource>().Play();
+        
         // Gain points
     }
   }
